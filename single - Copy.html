@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+          Adding options to a select element using jQuery?
+      </title>
+</head>
+
+<body>
+    <center>
+        <h1 style="color: green">GeeksForGeeks</h1>
+        <b>
+              Adding options to a select element 
+              using jQuery?
+          </b>
+        <p>
+            Select one from the given options:
+            <select id="select1">
+                <option value="free">Free</option>
+                <option value="basic">Basic</option>
+            </select>
+        </p>
+        <p>
+              Click the button below to add one 
+              option to the select box.
+          </p>
+        <button onclick="addOption()">Add option</button>
+    </center>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity=
+"sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        function addOption() {
+            optionText = 'Premium';
+            optionValue = 'premium';
+            $('#select1').append($('<option>')
+                .val(optionValue).text(optionText));
+        } 
+    </script>
+</body>
+
+</html>
